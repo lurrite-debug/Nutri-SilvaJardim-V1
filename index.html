@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutri Jardim - Cardápio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Nutri Jardim</h1>
+    <p>Tabela nutricional do almoço da escola Silva Jardim</p>
+    <button id="btn-tema" class="tema-btn">🌙 Tema Escuro</button>
+  </header>
+
+  <section id="info-dia">
+    <h2 id="data-hoje"></h2>
+  </section>
+
+<section id="busca-filtro">
+  <input type="text" id="input-busca" placeholder="Buscar prato..." />
+  <select id="filtro-calorias">
+    <option value="">Filtrar por calorias</option>
+    <option value="100">Até 100 kcal</option>
+    <option value="200">Até 200 kcal</option>
+    <option value="300">Até 300 kcal</option>
+  </select>
+  <select id="filtro-tipo">
+    <option value="">Todos tipos</option>
+    <option value="Carne">Carne</option>
+    <option value="Vegetal/Fruta">Vegetal</option>
+    <option value="Massa">Massa</option>
+  </select>
+</section>
+
+</section>
+
+  <section id="cardapio-section">
+    <table id="cardapio" class="tabela-cardapio">
+      <thead>
+        <tr>
+          <th data-sort="nome">Prato (100g)⬍</th>
+          <th data-sort="calorias">Calorias(100g) ⬍</th>
+          <th data-sort="proteinas">Proteínas (100g) ⬍</th>
+          <th data-sort="carboidratos">Carboidratos (100g) ⬍</th>
+          <th data-sort="gorduras">Gorduras (100g) ⬍</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Linhas do cardápio são inseridas aqui via JS -->
+      </tbody>
+    </table>
+    <div id="feedback-busca" class="feedback"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lucas-Pedro-Caio-Bianca - Nutri Jardim</p>
+  </footer>
+</body>
+</html>
+<!-- jksdjskdj-->
